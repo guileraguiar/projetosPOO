@@ -1,0 +1,17 @@
+7 - Desenvolva um programa em java que calcule a fun¸c˜ao de Bukin N. 6. Os valores de x e y serão informados pelo usuário, onde x ∈ [−15, −5], y ∈ [−3, 3].
+
+ENUNCIADO 1
+
+9 - Desenvolva um programa em java que calcule a função de Ackley N. 2. Os valores de x e y serão informados pelo usuário, onde x, y ∈ [−32, 32].
+
+ENUNCIADO 2
+
+10 - Desenvolva um programa em java que calcule a funçãao de Ackley N. 3. Os valores de x e y serão informados pelo usuário, onde x, y ∈ [−32, 32].
+
+ENUNCIADO 3
+
+_____Prints dos Resultados_____
+
+7 - RESULTADO 1, RESULTADO 11 e RESULTADO 12
+9 - RESULTADO 2 e RESULTADO 21
+10 - RESULTADO 3 e RESULTADO 31
