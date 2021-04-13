@@ -73,7 +73,7 @@ class Main {
           index = word.indexOf(letter, index + 1);
         }
         if(!secretWord.contains("*")){
-          System.out.println("\nParabéns, você ganhou! Copie o link para resgatar o seu prêmio - shorturl.at/euxM1");
+          System.out.println("\nParabéns, você ganhou! Copie o link para acrescentar a sua vitória! - https://www.youtube.com/watch?v=vnUscCCmPG0");
           break;
         }
 
