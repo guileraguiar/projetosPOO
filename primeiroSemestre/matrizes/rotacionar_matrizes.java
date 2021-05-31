@@ -1,5 +1,23 @@
 import java.util.Scanner;
+/*
 
+Crie um método estático que recebe uma matriz e que faça a rotação de acordo com o angulo informado.
+
+Por exemplo:
+
+matriz = { { 2, 3 }, { 4, 5 } } 
+Rotacionar 90 graus
+Resultado
+matriz = { { 4, 2 }, { 5, 3 } }
+
+Graus permitidos
+0, 90, 180, 270 e 360
+
+Rotacione sempre no sentido horário. 
+
+Considere apenas matrizes quadradas.
+
+*/
 class Main {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
@@ -23,7 +41,7 @@ class Main {
       }
     }
 
-    System.out.println("Resultado: \n");
+    System.out.println("Matriz: \n");
     for (i = 0; i < tam; i++){
       for (j = 0; j < tam; j++){
         System.out.print(matriz [i] [j] + " ");
