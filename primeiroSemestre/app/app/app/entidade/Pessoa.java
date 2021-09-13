@@ -1,38 +1,39 @@
-package entidade;
-import java.util.*;
+package app.entidade;
 
 public class Pessoa {
-
-
-    public Pessoa() {
-    }
 
     private int id;
     private String nome;
     private String sobrenome;
 
+    public Pessoa(int id, String nome, String sobrenome) {
+        this.id = id;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+    }
+
     public int getId() {
-        return 0;
+        return id;
     }
 
     public void setId(int id) {
-
+        this.id = id;
     }
 
     public String getNome() {
-        return "";
+        return nome;
     }
 
     public void setNome(String nome) {
-
+        this.nome = nome;
     }
 
     public String getSobrenome() {
-        return "";
+        return sobrenome;
     }
 
     public void setSobrenome(String sobrenome) {
-
+        this.sobrenome = sobrenome;
     }
 
 }
