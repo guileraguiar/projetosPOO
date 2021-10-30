@@ -1,7 +1,24 @@
 package uni.si.jdbc;
+import com.mysql.cj.protocol.Resultset;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
+
+/*
+
+create database bancoTeste
+
+create table Clientes (
+
+    id_cliente INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(100),
+    sobrenome varchar(100)
+
+)
+
+*/
 
 
 public class Conexao {
@@ -22,10 +39,18 @@ public class Conexao {
 
         String database = "bancoTeste";
         String username = "root";
-        String password = "root";
+        String password = "password";
 
         Class.forName("com.mysql.jdbc.Driver");
         return DriverManager.getConnection("jdbc:mysql://localhost:3306/" + database,username,password);
+        System.out.println("Conexão feita com sucesso!");
+
+        Statement statement = conexao.createStatement();
+        ResultSet resultSet = statement.executeQuery("INSERT INTO Clientes (nome, sobrenome) VALUES ('João', Costa)");
+
+        while (resultSet.next()) {
+            System.out.println(resultSet.getString("nome"));
+        }
 
     }
 
@@ -41,6 +66,6 @@ public class Conexao {
 
         }
 
-        }
+    }
 
 }
