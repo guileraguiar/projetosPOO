@@ -22,18 +22,19 @@ public class Main {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco_Teste","root","password");
+            System.out.println("Conexão realizada com sucesso!\n");
 
             //ADD
             String resultSet1 = "INSERT INTO Clientes(nome) VALUES(?);";
             String resultSet2 = "INSERT INTO Clientes(nome) VALUES(?);";
 
             //UPDATE
-            String resultSet3 = "UPDATE Clientes SET nome = ? WHERE id = ?;";
-            String resultSet4 = "UPDATE Clientes SET nome = ? WHERE id = ?;";
+            String resultSet3 = "UPDATE Clientes SET nome = ? WHERE id_cliente = ?;";
+            String resultSet4 = "UPDATE Clientes SET nome = ? WHERE id_cliente = ?;";
 
             //DELETE
-            String resultSet5 = "DELETE FROM Clientes WHERE id = ?;";
-            String resultSet6 = "DELETE FROM Clientes WHERE id = ?;";
+            String resultSet5 = "DELETE FROM Clientes WHERE id_cliente = ?;";
+            String resultSet6 = "DELETE FROM Clientes WHERE id_cliente = ?;";
 
             //SELECT
             String select = "Select * FROM Clientes;";
@@ -45,17 +46,19 @@ public class Main {
                 pS.setString(2, "Maria");
 
                 //UPDATE
-                pS.setString(1, "John");
-                pS.setString(2, "Marya");
+                pS.setString(3, "John");
+                pS.setInt(4, 1);
+
+                pS.setString(5, "Marya");
+                pS.setInt(6, 2);
 
                 //DELETE
-                pS.setString(1, "John");
-                pS.setString(2, "Marya");
+                pS.setInt(7, 1);
+                pS.setInt(8, 2);
 
                 // Executando
                 pS.executeUpdate();
-                pS.executeQuery();
-                ps.close();
+
 
             }catch (SQLException e){
 
