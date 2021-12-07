@@ -69,6 +69,7 @@ class telaLogin extends JFrame implements ActionListener {
                 String usuario = campoUsuario.getText();
                 String senha = campoSenha.getText();
                 System.out.println("Usuário: " + usuario + " | Senha: " + senha);
+
             }
         });
 
